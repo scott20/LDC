@@ -1,0 +1,38 @@
+{
+  "name": "ldc",
+  "version": "1.0.0",
+  "description": "Guia prático para uma convivência harmoniosa entre brasileiros e americanos. Aprenda sobre as diferenças culturais, etiqueta e comportamento nos Estados Unidos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Nenhum teste definido ainda\\\"\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scott20/LDC.git"
+  },
+  "keywords": [
+    "PWA",
+    "br",
+    "Longe de Casa",
+    "cultura americana",
+    "etiqueta",
+    "comportamento",
+    "convivência",
+    "brasileiros",
+    "americanos",
+    "convivência nos EUA",
+    "diferenças culturais",
+    "etiqueta americana",
+    "guia prático"
+  ],
+  "author": "William Scott Hood do Amaral Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scott20/LDC/issues"
+  },
+  "homepage": "https://github.com/scott20/LDC#readme",
+  "dependencies": {
+    "firebase": "^10.5.2",
+    "package-lock.json": "^1.0.0"
+  }
+}
