@@ -21,6 +21,14 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+p a{
+    color: #009739;
+}
+
+p a:focus, p a:hover{
+    color: gold;
+}
+
 .logo {
     font-weight: bolder;
     font-size: 25px;
@@ -179,18 +187,17 @@ header{
     top:0; left: 0; right: 0;
     background: #012169;
     /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); */
-    padding: 20px 7%;
+    padding: 5px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
 }
 
-header .logo{
-    font-weight: bolder;
-    font-size: 25px;
-    color:wheat;
+.navbar{
+    margin-bottom: -20px;
 }
+
 
 header .navbar ul{
     list-style: none;
@@ -250,7 +257,7 @@ header label{
     display: none;    
 }
 
-@media(max-width:991px){
+@media(max-width:1077px){
 
     header{
         padding: 20px;
