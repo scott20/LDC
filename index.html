@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Londe de Casa</title>
+  <title>Longe de Casa</title>
   <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -19,8 +19,10 @@
   <!-- manifesto -->
   <link rel="manifest" href="/manifest.json">
   <!-- css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="public/assets/styles/style.css">
+  <!-- novo -->
 </head>
 
 <body>
@@ -33,8 +35,8 @@
         <li><a href="#Sobre">Sobre</a></li>
         <li><a href="#Objetivos">Objetivos</a></li>
         <li><a href="#PWA">PWA</a></li>
-        <li><a href="#Cultura">Conteudo</a>
-          <!-- <ul>
+        <li><a href="#Cultura">Conteudo</a></li>
+        <!-- <ul>
                     <li><a href="#Cultura">Cultura e Comportamento ▼</a>
                         <ul>
                             <li><a href="#">Interações</a></li>
@@ -48,7 +50,7 @@
                     <li><a href="#Taboo">Taboo</a></li>
                 </ul>
             </li> -->
-        <li><a href="#Quiz">Quiz</a></li>
+        <li><a href="#Qz">Quiz</a></li>
         <li><a href="#Recursos">Recursos Adicionais</a></li>
       </ul>
     </nav>
@@ -62,9 +64,9 @@
     <a class="btn btn-primary" href="#Objetivos">Objetivos</a>
     <a class="btn btn-primary" href="#PWA">PWA</a>
     <a class="btn btn-primary" href="#Cultura">Conteúdo</a>
-    <a class="btn btn-primary" href="#Quiz">Quiz</a>
+    <a class="btn btn-primary" href="#Qz">Qz</a>
     <a class="btn btn-primary" href="#Recursos">Recursos Adicionais</a>
-    
+
   </div>
   <!-- div sobre -->
   <div class="container-fluid bg-2" id="Sobre">
@@ -94,7 +96,7 @@
     <p>Você pode acessar todas essas informações mesmo sem conexão à Internet, tornando-o útil durante viagens! Este
       aplicativo é perfeito para pessoas desde adolescentes a idosos, que desejam descobrir ou aprofundar sua
       compreensão da cultura americana e como é o cotidiano nos Estados Unidos.</p>
-    <p>Além disso, este aplicativo inclui <a href="#Quiz"><strong>quizzes</strong></a> interativos que simulam cenários
+    <p>Além disso, este aplicativo inclui <a href="#Qz"><strong>quizzes</strong></a> interativos que simulam cenários
       da vida real, permitindo que você
       teste e reforce seu conhecimento. É como ter um amigo americano ao seu lado, guiando-o através de situações
       sociais e culturais.</p>
@@ -162,7 +164,7 @@
     </ul>
     </p>
 
-    <button class="accordion">
+    <button type="button" class="accordion">
       <h3><strong>Interação Social:</strong></h3>
     </button>
     <div class="acpanel">
@@ -207,7 +209,7 @@
       </ul>
     </div>
     <!-- --------------------------------------------------------------- -->
-    <button class="accordion">
+    <button type="button" class="accordion">
       <h3><strong>Interação Comercial:</strong></h3>
     </button>
     <div class="acpanel">
@@ -244,7 +246,7 @@
       </ul>
     </div>
     <!-- --------------------------------------------------------------- -->
-    <button class="accordion">
+    <button type="button" class="accordion">
       <h3><strong>Interação Cultural:</strong></h3>
     </button>
     <div class="acpanel">
@@ -279,30 +281,283 @@
 
       </ul>
     </div>
+  </div>
 
-    <!-- --------------------------------------------------------------- -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- botao instala -->
-    <script src="src/install.js"></script>
-    <!-- <script src="src/dropdown.js"></script> -->
-    <script src="src/accordion.js"></script>
-    <!-- FireBase -->
-    <script src="src/firebase.js"></script>
-    <!-- verifica JavaScript -->
-    <noscript>
-      <div class="container mt-4">
-        <div class="alert alert-danger">
-          Para usar este aplicativo, ative o JavaScript em seu navegador.
+  <div class="container-fluid bg-1" id="Qz">
+    <h2 class="text-center">Quiz de Múltipla Escolha</h2>
+    <div class="container-fluid">
+
+      <form id="quiz">
+        <div class="col-lg-6 col-md-12 coll-sm-12" style="min-height: 250px;">
+          <div>
+            <h3>1. Como os americanos costumam se cumprimentar em situações formais?</h3>
+            <div class="form-check">
+              <input type="radio" id="q1a" name="q1" value="a" class="form-check-input">
+              <label for="q1a" class="form-check-label">Com um abraço caloroso.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q1b" name="q1" value="b" class="form-check-input">
+              <label for="q1b" class="form-check-label">Com um aperto de mão firme e rápido.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q1c" name="q1" value="c" class="form-check-input">
+              <label for="q1c" class="form-check-label">Com um beijo na bochecha.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q1d" name="q1" value="d" class="form-check-input">
+              <label for="q1d" class="form-check-label">Com um toque no ombro.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 coll-sm-12" style="min-height: 250px;">
+          <div>
+            <h3>2. O que significa quando um americano diz a um desconhecido, “Thank you for your services”?</h3>
+            <div class="form-check">
+              <input type="radio" id="q2a" name="q2" value="a" class="form-check-input">
+              <label for="q2a" class="form-check-label">A pessoa é um condutor de ônibus.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q2b" name="q2" value="b" class="form-check-input">
+              <label for="q2b" class="form-check-label">A pessoa é um veterano de guerra.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q2c" name="q2" value="c" class="form-check-input">
+              <label for="q2c" class="form-check-label">A pessoa é um profissional de saúde.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q2d" name="q2" value="d" class="form-check-input">
+              <label for="q2d" class="form-check-label">A pessoa é um professor.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 coll-sm-12" style="min-height: 250px;">
+          <div>
+            <h3>3. O que você deve fazer se for convidado para um almoço ou jantar em Rasa americana e um amigo
+              aparecer de última hora na sua casa?</h3>
+            <div class="form-check">
+              <input type="radio" id="q3a" name="q3" value="a" class="form-check-input">
+              <label for="q3a" class="form-check-label">Leve seu amigo junto, pois sempre cabe mais um.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q3b" name="q3" value="b" class="form-check-input">
+              <label for="q3b" class="form-check-label">Peça desculpas ao seu amigo e explique que não pode
+                levá-lo.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q3c" name="q3" value="c" class="form-check-input">
+              <label for="q3c" class="form-check-label">Ligue para o anfitrião e pergunte se pode levar um convidado
+                extra.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q3d" name="q3" value="d" class="form-check-input">
+              <label for="q3d" class="form-check-label">Ignore a situação e leve seu amigo sem avisar o
+                anfitrião.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 coll-sm-12" style="min-height: 250px;">
+          <div>
+            <h3>4. O que é o “Happy-hour” nos Estados Unidos?</h3>
+            <div class="form-check">
+              <input type="radio" id="q4a" name="q4" value="a" class="form-check-input">
+              <label for="q4a" class="form-check-label">Um período de descontos em lojas.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q4b" name="q4" value="b" class="form-check-input">
+              <label for="q4b" class="form-check-label">Um período de desconto em bares onde pessoas se reúnem para
+                socializar e beber.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q4c" name="q4" value="c" class="form-check-input">
+              <label for="q4c" class="form-check-label">Um período de descontos em cinemas.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q4d" name="q4" value="d" class="form-check-input">
+              <label for="q4d" class="form-check-label">Um período de descontos em parques de diversão pessoas se
+                reúnem para socializar.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 coll-sm-12" style="min-height: 250px;">
+          <div>
+            <h3>5. O que é o “Brunch” nos Estados Unidos?</h3>
+            <div class="form-check">
+              <input type="radio" id="q5a" name="q5" value="a" class="form-check-input">
+              <label for="q5a" class="form-check-label">Refeição que combina café da manhã e almoço, geralmente
+                servida nos finais de semana.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q5b" name="q5" value="b" class="form-check-input">
+              <label for="q5b" class="form-check-label">Refeição que combina almoço e jantar, geralmente servida nos
+                dias de semana.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q5c" name="q5" value="c" class="form-check-input">
+              <label for="q5c" class="form-check-label">Refeição que combina café da manhã e almoço, geralmente
+                servida nos dias de semana.</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="q5d" name="q5" value="d" class="form-check-input">
+              <label for="q5d" class="form-check-label">Refeição que combina almoço e jantar, geralmente servida nos
+                finais de semana.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 coll-sm-12">
+          <div>
+            <input type="button" value="Submit" onclick="calculateScore()" class="btn btn-primary">
+          </div>
+        </div>
+      </form>
+      <p></p>
+      <p id="score"></p>
+    </div>
+  </div>
+
+
+  <div class="container-flex bg-2 mb-4 p-3">
+    <h2 class="text-center">Recursos Adicionais</h2>
+    <p>Aqui você encontra links úteis para quem quer aprender mais sobre o assunto que nos interessa. São recursos que
+      podem complementar ou ampliar as informações que você já tem, e que podem te ajudar a explorar outros detalhes,
+      exemplos, fontes, dicas, sugestões ou outras perspectivas sobre o tema. Os recursos adicionais podem ajudar você a
+      aprender mais, a resolver dúvidas, a se aprofundar em algum aspecto específico ou a conhecer outros tópicos
+      relacionados.</p><p>Aproveite!</p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card p-4">
+
+          <div class="image d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-center">Serviços de Cidadania e Imigração dos Estados Unidos</h5>
+
+            <img src="assets/images/USCIS_RGB_Hor_Blue_at20.svg" alt="Serviços de Cidadania e Imigração dos Estados Unidos" />
+
+            <p class="text-center">U.S. citizenship and immigration services</p>
+            <hr>
+            <p>O USCIS é a agência federal que supervisiona a imigração legal para os Estados Unidos.<br> No site, você
+              pode encontrar informações e serviços sobre alívio de imigração, processos, formulários, notícias e muito
+              mais.<br> Dentre eles, o guia M-618, oferece dicas sobre como se adaptar à cultura e aos costumes
+              americanos, como encontrar emprego, educação, saúde e assistência social, e como participar da vida cívica
+              e comunitária.</p>
+            <hr>
+            <a href="https://www.uscis.gov/sites/default/files/document/guides/M-618_p.pdf"><strong>Guia
+                M-618</strong></a>
+
+          </div>
         </div>
       </div>
-    </noscript>
-    <!-- verifica Service Worker   -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js');
+
+
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card p-4">
+
+          <div class="image d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-center">immihelp</h5>
+
+            <img src="assets/images/immihelp_logo.svg" style="min-height: 92px;" alt="immihelp logo" />
+            <p>“immigration” (imigração) e “help” (ajuda). A pronúncia do nome é algo como “ími-hélp”, com a sílaba
+              tônica na primeira parte.</p>
+
+            <hr>
+            <p>O immihelp é um site que oferece informações e serviços sobre a imigração legal para os Estados Unidos.
+              Ele não é um guia oficial, mas sim um recurso independente e não afiliado ao governo americano. O site é
+              de propriedade da Immihelp, Inc., uma empresa privada fundada em 1999 por um casal de imigrantes indianos,
+              que também são os autores e editores do conteúdo do site.<br> A empresa tem sede em San Jose, Califórnia,
+              e o seu objetivo é ajudar as pessoas que querem viajar, estudar, trabalhar ou morar nos Estados Unidos,
+              fornecendo informações confiáveis, atualizadas e fáceis de entender.</p>
+            <hr>
+            <a href="https://www.immihelp.com/newcomer-to-usa-guide/#"><strong>Guia Geral</strong></a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card p-4">
+
+          <div class="image d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-center"><a
+                href="https://www.americanproject.com.br/estilo-de-vida-americano-american-way-of-life/">american
+                project</a></h5>
+            <hr>
+            <h5 class="text-center"><a href="https://imigrefacil.com.br/post/category/artigos/">imigre facil</a></h5>
+            <hr>
+            <h5 class=“text-center”><a href=“https://www.brasileiraspelomundo.com/?s=nos+Estados+Unidos”>brasileiras
+                pelo mundo</a></h5>
+            <hr>
+            <h5 class=“text-center”><a href=“http://www.pbfguarulhos.com.br/?s=nos+Estados+Unidos”>pbfguarulhos</a></h5>
+            <hr>
+            <h5 class=“text-center”><a href=“https://umaturistanasnuvens.com/15-costumes-e-habitos-dos-americanos/”>uma
+                turista nas nuvens</a></h5>
+            <hr>
+            <h5 class=“text-center”><a href=“http://www.cajuinaefrevo.com/2013/07/02/lunch-time-brazil-x-u-s-a/”>cajuina
+                e frevo</a></h5>
+            <hr>
+            <h5 class=“text-center”><a href=“https://manualdoturista.com.br/gastronomia-nos-usa/”>manual do turista</a>
+            </h5>
+            <hr>
+            <h5 class=“text-center”><a href=“https://www.maetipoeu.com.br/?s=Estados+Unidos”>mãe tipo eu</a></h5>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+
+
+
+      <!-- Adicione mais instâncias conforme necessário -->
+
+    </div>
+  </div>
+  <!-- --------------------------------------------------------------- -->
+  <script>
+    function calculateScore() {
+      var score = 0;
+      var correctAnswers = ["b", "b", "b", "b", "a"]; // Adicione as respostas corretas aqui
+
+      for (var i = 0; i < correctAnswers.length; i++) {
+        var question = "q" + (i + 1);
+        var selectedOption = document.querySelector('input[name="' + question + '"]:checked');
+
+        if (selectedOption && selectedOption.value === correctAnswers[i]) {
+          score++;
+        }
       }
-    </script>
+
+      document.getElementById("score").innerHTML = "Você acertou " + score + " de " + correctAnswers.length + " perguntas!";
+    }
+  </script>
+  <!-- --------------------------------------------------------------- -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- botao instala -->
+  <script src="src/install.js"></script>
+  <!-- <script src="src/dropdown.js"></script> -->
+  <script src="src/accordion.js"></script>
+  <!-- FireBase -->
+  <script src="src/firebase.js"></script>
+  <!-- verifica JavaScript -->
+  <noscript>
+    <div class="container mt-4">
+      <div class="alert alert-danger">
+        Para usar este aplicativo, ative o JavaScript em seu navegador.
+      </div>
+    </div>
+  </noscript>
+  <!-- verifica Service Worker   -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
 
 </body>
 

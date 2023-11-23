@@ -17,7 +17,7 @@ body {
     color: #f5f6f7;
 }
 
-a:focus, a:hover {
+a, a:focus, a:hover {
     text-decoration: none;
 }
 
@@ -28,6 +28,30 @@ p a{
 p a:focus, p a:hover{
     color: gold;
 }
+
+hr{
+    border-top: 1px solid #444;
+    width: 70%;
+}
+
+.card {
+    width: 350px;
+    background-color: gray;
+    border-right: 3px outset white;
+    border-bottom: 3px outset white;
+    /* border-style: dashed; */
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.image img {
+    transition: all 0.5s
+}
+
+.card:hover .image img {
+    transform: scale(1.5)
+}
+
 
 .logo {
     font-weight: bolder;
@@ -149,26 +173,32 @@ p a:focus, p a:hover{
 
 /*  */
 .margin-left{ margin-left:7%;}
+
 /* accordion */
 .accordion {
   background-color: #337ab7;
   color: #DDD;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
+  padding: 20px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 0.3%;
+  /* border: none; */
   text-align: center;
-  outline: none;
+  outline: invert;
   /* font-size: 15px; */
-  transition: 3.5s;
-  border-radius: 2px;  
+  transition: 2.5s;
+  border-radius: 80px;  
 }
 
 .active, .accordion:hover, .active, .accordion:focus {
   color:#fff;
   background-color:#286090;
-  border-color:#122b40;
-  border-radius: 50px;
+  border: none;
+  
+  margin: 0%;
+  width: 100%;
+  border-radius: 2px;
   /* font-size: 20px; */
   text-decoration: none;
 }
